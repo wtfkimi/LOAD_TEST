@@ -27,6 +27,9 @@ export default function () {
         headers: {
             'Content-Type': 'application/json',
         },
+        tls: {
+            insecureSkipTLSVerify: true
+        }
     };
 
     let response = http.post(url, payload, params);
